@@ -1,6 +1,5 @@
 import json
 import os
-
 from flask import Flask, request
 import requests
 import urllib.parse
@@ -64,7 +63,7 @@ def getAddressDetailsV1():
         return error_code
 
     # Create url for requesting google apis
-    url = f'https://maps.googleapis.com/maps/api/geocode/json'
+    url = 'https://maps.googleapis.com/maps/api/geocode/json'
 
     # encode api_address
     url += f'?address={urllib.parse.quote(api_address)}'

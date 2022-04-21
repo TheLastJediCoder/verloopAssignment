@@ -22,10 +22,14 @@ Start Server
 - [Optional] Activate virtual environment if set up
 - Navigate to folder(verloopAssignment) with main.py
 - Create .env file and add ```API_KEY="Your Google Api key"```
-- Execute command: python main.py
+- Execute command: python app.py
 - Use api testing tool to make request on ```http://<address>/getAddressDetails```
 
-# Example Request:
+Example Request:
+===============
+
+API v1
+------------
 
 Request type | POST
 
@@ -74,3 +78,5 @@ Example xml:
         </coordinates>
     </root>
     ```
+API v2
+------------
